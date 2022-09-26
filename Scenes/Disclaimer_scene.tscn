@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://TileSets/MenuTiles/BlackBackground.jpg" type="Texture" id=1]
+[ext_resource path="res://Scripts/Disclaimer_scene.gd" type="Script" id=2]
+[ext_resource path="res://Fonts/ARIAL.TTF" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 3 )
+
+[node name="Disclaimer_scene" type="Sprite"]
+position = Vector2( 501, 300 )
+scale = Vector2( 1.30316, 2.01143 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -373.707
+margin_top = -150.639
+margin_right = -535.707
+margin_bottom = -201.639
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 18.0
+margin_top = 11.0
+margin_right = 769.0
+margin_bottom = 287.0
+
+[node name="Disclaimer" type="Label" parent="CenterContainer/VBoxContainer"]
+margin_right = 751.0
+margin_bottom = 276.0
+custom_fonts/font = SubResource( 1 )
+text = "7.2 millones de mexicanas y mexicanos se identifican como indígenas. 
+
+Un gran porcentaje de ellos sufren discriminación todos los días.
+
+Es de suma importancia dejar estas actitudes atrás para construir un 
+sentido de pertenencia para todos y todas.
+
+
+Sortea los obstáculos para completar el nivel."
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
