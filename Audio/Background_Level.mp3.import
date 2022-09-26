@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Background_Level.mp3-35d1450e54daaba69c66854f33b07965.mp3str"
+
+[deps]
+
+source_file="res://Audio/Background_Level.mp3"
+dest_files=[ "res://.import/Background_Level.mp3-35d1450e54daaba69c66854f33b07965.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
